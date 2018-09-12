@@ -1,0 +1,98 @@
+@import "modules/_colors.scss";
+@import "modules/_typography.scss";
+@import "partials/_navigation.scss";
+@import "partials/_home.scss";
+@import "partials/_about.scss";
+@import "partials/_services.scss";
+@import "partials/_gallery.scss";
+@import "partials/_subscribe.scss";
+@import "partials/_blog.scss";
+@import "partials/_contact.scss";
+@import "partials/_footer.scss";
+
+body {
+  font-family: "Raleway";
+  // padding-top: 50px;
+}
+section {
+  outline: none;
+}
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+.view-more {
+  margin-top: 30px;
+  // font-size: 20px;
+  font-weight: 300;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  &:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+///navigation///
+// .icon-bar {
+//   transition: 0.2s ease-in;
+// }
+//
+// .navbar-default .navbar-toggle[aria-expanded="true"] .icon-bar {
+// }
+//
+// .navbar-default .navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
+//   background: red;
+// }
+// .navbar-default .navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(3) {
+//   background: blue;
+//   margin-top: 0;
+// }
+// .navbar-default .navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(4) {
+//   background: green;
+//   margin-top: 0;
+// }
+
+/////home/////
+// .test {
+//   display: block;
+//   width: 200px;
+//   height: 200px;
+//   background: red;
+// }
+.jumbotron {
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  margin-bottom: 0;
+  h1 {
+    margin-top: 50%;
+  }
+}
+h1 {
+  font-weight: 700;
+  line-height: 25px;
+  color: rgb(38, 38, 38);
+}
+
+////ABOUT//////
+
+.about {
+  background-color: #00c3c3;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+////GALLERY/////
+.bottom-buffer {
+  margin-bottom: 26px;
+}

@@ -1,0 +1,37 @@
+.about {
+  h1 {
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 30px;
+    line-height: 70px;
+  }
+  p {
+    color: #fff;
+    font-size: 17px;
+  }
+  /* Custom, iPhone Retina */
+  @media only screen and (min-width: 320px) {
+  }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (min-width: 480px) {
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width: 768px) {
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width: 992px) {
+    h1 {
+      font-size: 60px;
+    }
+  }
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width: 1200px) {
+    h1 {
+      font-size: 70px;
+    }
+  }
+}

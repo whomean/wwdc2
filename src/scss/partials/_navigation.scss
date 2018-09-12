@@ -1,0 +1,76 @@
+.navbar-default.my-nav {
+  background: rgba(255, 255, 255, 0);
+  padding: 30px 0 20px;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  webkit-box-shadow: none;
+  .navbar-collapse {
+    border: none;
+  }
+}
+
+.fixed-nav .navbar-default.my-nav {
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1px;
+  a {
+    transition: all 0.2s;
+    transform: scale(0.95);
+  }
+  .navbar-brand {
+    transform: scale(0.25);
+    transform: translateX(-1000px);
+  }
+  .navbar-collapse {
+    margin-left: -16px;
+  }
+}
+
+.navbar-default.my-nav .navbar-brand {
+  font-size: 50px;
+  line-height: 25px;
+  color: rgb(38, 38, 38);
+  font-family: "Pacifico";
+}
+.navbar-default.my-nav .navbar-nav > li > a {
+  font-size: 16px;
+  line-height: 25px;
+  color: rgb(38, 38, 38);
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+.highlight {
+  position: absolute;
+  top: 0;
+  height: 3px;
+  display: block;
+  background: $accent;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .collapsing {
+    position: absolute !important;
+    z-index: 20;
+    width: 100%;
+    top: 50px;
+  }
+  .collapse.in {
+    background: rgba(255, 255, 255, 0.9);
+    display: block;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    // top: 50px;
+  }
+  .navbar-collapse {
+    max-height: none !important;
+  }
+}
