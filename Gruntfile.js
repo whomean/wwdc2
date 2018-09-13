@@ -11,13 +11,13 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          "src/css/main.css": "src/scss/main.scss"
+          "docs/css/main.css": "docs/scss/main.scss"
         }
       }
     },
     watch: {
       scripts: {
-        files: ["src/scss/*.scss"],
+        files: ["docs/scss/*.scss"],
         tasks: ["sass"],
         options: {
           spawn: false
@@ -27,11 +27,11 @@ module.exports = function(grunt) {
     browserSync: {
       dev: {
         bsFiles: {
-          src: ["src/css/*.css", "src/*.html"]
+          src: ["docs/css/*.css", "docs/*.html"]
         },
         options: {
           watchTask: true,
-          server: "./src"
+          server: "./docs"
         }
       }
     }

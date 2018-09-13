@@ -21,8 +21,6 @@
   .fixed-nav .navbar-default.my-nav a {
     transition: all 0.2s;
     transform: scale(0.95); }
-    .fixed-nav .navbar-default.my-nav a:visited {
-      color: red; }
   .fixed-nav .navbar-default.my-nav .navbar-brand {
     transform: scale(0.25);
     transform: translateX(-1000px); }
